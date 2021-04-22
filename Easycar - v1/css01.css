@@ -1,7 +1,17 @@
 body{
+overflow:hidden;
 color:#000;
 background-image:url(background.jpg);
 background-repeat:no-repeat;
+
+}
+
+#div_acima{
+position:relative;
+background-color:#000;
+height:110px;
+width:2000px;
+transform:translate(-10px,0px);
 }
 
 #label_01{
@@ -162,7 +172,7 @@ position:relative;
 border:solid red;
 width:1000px;
 height:730px;
-transform:translate(340px,250px);
+transform:translate(300px,140px);
 border-radius:10px;
 }
 #input_enviar{
@@ -182,4 +192,22 @@ font-size:20px;
 left:1060px;
 height:45px;
 width:120px;
+}
+
+a{
+padding:6px;
+color:white;
+font-size:24px;
+text-decoration:none;
+
+}
+#div_as{
+position:relative;
+transform:translate(1150px,-80px);
+}
+a:hover{
+
+color:red;
+
+
 }
