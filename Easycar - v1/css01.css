@@ -1,185 +1,110 @@
 body{
-color:#000;
-background-image:url(background.jpg);
-background-repeat:no-repeat;
+    background-image:url(background_cadastro.jpg);
+    overflow:hidden;
 }
-
-#label_01{
-font-size:20px;
-color:#FFFAFA;
+#div_principal{
+    position:relative;
+    transform:translate(560px,200px);
+    width:500px;
+    height:540px;
+    background:rgba(0,0,0,0.5) ;
 }
-#label_02{
-font-size:20px;
-color:#FFFAFA;
-}
-#label_03{
-font-size:20px;
-color:#FFFAFA;
-}
-#label_04{
-font-size:20px;
-color:#FFFAFA;
-}
-#label_05{
-font-size:20px;
-color:#FFFAFA;
-}
-#label_06{
-font-size:20px;
-color:#FFFAFA;
-}
-#label_07{
-font-size:20px;
-color:#FFFAFA;
-}
-#label_08{
-font-size:20px;
-color:#FFFAFA;
-}
-#input_01{
-position:relative;
-border-radius:6px;
+#div_principal input[type="text"]{
 border:none;
-border-bottom:1px solid#FFFAFA;
+border-bottom:solid#FFF;
 outline:none;
-width:330px;
-background:transparent;
-color:#FFFAFA;
-font-size:20px;
-}
-
-#input_01:hover{
+display:block;
+width:300px;
+margin:36px;
 position:absolute;
-left:62px;
-}
-
-#input_02{
-position:relative;
-border:none;
-border-bottom:1px solid#000;
-outline:none;
-border-radius:6px;
+top:0px;
+left:-35px;
 background:transparent;
-color:#FFFAFA;
-font-size:20px;
-}
-#input_02:hover{
-position:absolute;
-left:170px;
-}
-#input_03{
-position:relative;
-border:none;
-border-bottom:1px solid#FFFAFA;
-outline:none;
-border-radius:6px;
-background:transparent;
-color:#FFFAFA;
-font-size:20px;
-}
-
-
-#input_04{
-position:relative;
-border:none;
-border-bottom:1px solid#FFFAFA;
-outline:none;
-border-radius:6px;
-background:transparent;
-color:#FFFAFA;
-font-size:20px;
-width:60px;
-}
-#input_05{
-position:relative;
-border:none;
-border-bottom:1px solid#FFFAFA;
-outline:none;
-border-radius:6px;
-background:transparent;
-color:#FFFAFA;
-font-size:20px;
-}
-#input_05:hover{
-position:absolute;
-left:620px;
-}
-#select_01{
-position:relative;
-border:none;
-border-bottom:1px solid#FFFAFA;
-outline:none;
-border-radius:6px;
-background:transparent;
-font-size:20px;
-
-}
-
-#select_02{
-position:relative;
-border:none;
-border-bottom:1px solid#FFFAFA;
-outline:none;
-border-radius:6px;
-background:transparent;
-
-}
-#select_02:hover{
-position:absolute;
-left:340px;
-}
-#input_06{
-position:relative;
-border:none;
-border-bottom:1px solid#FFFAFA;
-outline:none;
-border-radius:6px;
-background:transparent;
-color:#FFFAFA;
-font-size:20px;
-
-}
-#input_06:hover{
-position:absolute;
-left:40px;
-}
-
-#div_01 h2{
-color:#000;
-position:absolute;
-top:250px;
-left:650px;
-font-size:34px;
-}
-#div_02{
-position:absolute;
-top:360px;
-left:380px;
-
-}
-#principal{
-position:relative;
-border:solid red;
-width:1000px;
-height:730px;
-transform:translate(340px,250px);
-border-radius:10px;
-}
-#input_enviar{
-
-position:relative;
-left:1050px;
-border-radius:4px;
-height:40px;
-width:100px;
-background-color:orange;
+color:#FFF;
 font-size:15px;
+padding:4px;
 }
-#input_enviar:hover{
+#div_principal input[type="password"]{
+border:none;
+border-bottom:solid#FFF;
+outline:none;
+display:block;
+background:transparent;
+width:300px;
+margin:36px;
 position:absolute;
-zoom:100%;
-font-size:20px;
-left:1060px;
-height:45px;
-width:120px;
+top:0px;
+left:-35px;
+color:#FFF;
+font-size:15px;
+padding:4px;
+
+
+}
+#div_principal input[type="submit"]{
+    position:absolute;
+    width:120px;
+    height:40px;
+    background-color:#fa3706;
+    color:#fff;
+    border-radius:5px;
+    top:100px;
+    left:110px;
+ }
+#email{
+   
+    width:60px;
+    height:50px;
+    position:absolute;
+    top:250px;
+    left:90px;
+    color:#FFF;
+    font-size:20px;
+    
+
+    
+}
+#senha{
+    
+    width:60px;
+    height:50px;
+    position:absolute;
+   top:100px;
+   color:#FFF;
+   font-size:20px;
+}
+#esqueceu_senha{
+    position:absolute;
+    width:140px;
+    top:70px;
+    left:3px;
+    color:#fa3706;
+    font-size:16px;
+}
+#imagem{
+    position:absolute;
+    top:-330px;
+   left:40px;
+   
+}
+#novo{
+    position:absolute;
+ color:gray;
+    font-size:15px;
+    width:300px;
+    height:30px;
+    transform:translate(29px,110px);
+}
+#novo a{
+    text-decoration:none;
+    color:#fa3706;
+}
+#personagem{
+    position:absolute;
+    top:-250px;
+    left:40px;
+}
+#vt{
+    position:absolute;
+    transform:translate(-70px,-350px);
 }
