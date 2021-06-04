@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Document</title>
+    <style>
+        body{
+            overflow:scroll;
+            overflow-x:hidden;
+        }
+        #barra_de_tarefa img{
+            position:absolute;
+            left:70px;
+            background:transparent;
+            top:20px;
+        }
+        #barra a{
+            text-decoration:none;
+            color:white;
+            font-family:Bahnschrift SemiBold;
+            font-size:18px;
+            padding:20px;
+        }
+        #barra{
+            position:absolute;
+            top:20px;
+            left:750px;
+        }
+        #barra_de_tarefa{
+            height:80px;
+            background-color:rgb(39, 39, 39);
+            position:relative;
+            transform:translate(47px,-8px);
+            width:1450px;
+        }
+        #imagem{
+            position:absolute;
+            left:-30px;
+            top:70px;
+            
+        }
+        #linha_abaixo_do_texto{
+            position:absolute;
+            top:-50px;
+            
+            border:none;
+            border-bottom:solid gray;
+            left:100px;
+            width:1285px;
+        }
+        #formulario_dados_pessoais h4{
+            position:absolute;
+            left:100px;
+            top:-120px;
+            width:300px;
+            font-size:26px;
+            font-family:Bahnschrift SemiBold;
+        }
+        #formulario_dados_pessoais {
+            position:absolute;
+            top:670px;
+            
+        }
+        #formulario_dados_pessoais form label{
+           font-family:Bahnschrift SemiBold;
+           font-size:18px;
+        }
+        #nome{
+            position:absolute;
+            left:95px;
+           
+            width:900px;
+        }
+       #nome input{
+           width:700px;
+           padding:4px;
+           border-radius:7px;
+           background-color:rgb(241, 233, 233);
+       }
+       #data_de_nascimento{
+           position:absolute;
+           left:900px;
+          
+           width:600px;
+       }
+       #data_de_nascimento input{
+        width:300px;
+
+           padding:4px;
+           border-radius:7px;
+           background-color:rgb(241, 233, 233);
+       }
+       #rg{
+        position:absolute;
+           left:0px;
+           top:70px;
+           left:95px;
+           width:700px;
+       }
+       #rg input{
+        width:580px;
+
+padding:4px;
+border-radius:7px;
+background-color:rgb(241, 233, 233);
+       }
+       #cpf{
+        position:absolute;
+           left:0px;
+           top:70px;
+           left:760px;
+           width:700px;
+       }
+       #cpf input{
+        width:570px;
+
+padding:4px;
+border-radius:7px;
+background-color:rgb(241, 233, 233);
+       }
+       #logradouro{
+        position:absolute;
+           left:0px;
+           top:145px;
+           left:95px;
+           width:700px;
+       }
+       #logradouro input{
+        width:515px;
+
+padding:4px;
+border-radius:7px;
+background-color:rgb(241, 233, 233);
+       }
+       #numero{
+        position:absolute;
+           left:0px;
+           top:145px;
+           left:760px;
+           width:700px;
+       }
+      
+       #numero input{
+        width:80px;
+
+padding:4px;
+border-radius:7px;
+background-color:rgb(241, 233, 233);
+       }
+       #complemento{
+        position:absolute;
+           left:0px;
+           top:145px;
+           left:950px;
+           width:700px;
+       }
+       #complemento input{
+        width:300px;
+
+padding:4px;
+border-radius:7px;
+background-color:rgb(241, 233, 233);
+       }
+       #cidade{
+        position:absolute;
+           left:0px;
+           top:220px;
+           left:95px;
+           width:700px;
+       }
+       #cidade input{
+        width:500px;
+
+padding:4px;
+border-radius:7px;
+background-color:rgb(241, 233, 233);
+       }
+       #estado{
+        position:absolute;
+           left:0px;
+           top:220px;
+           left:765px;
+           width:700px;
+       }
+       #estado input{
+        width:50px;
+
+padding:4px;
+border-radius:7px;
+background-color:rgb(241, 233, 233);
+       }
+       #cep{
+        position:absolute;
+           top:220px;
+           left:950px;
+           width:700px;
+       }
+       #cep input{
+        width:380px;
+
+padding:4px;
+border-radius:7px;
+background-color:rgb(241, 233, 233);
+       }
+        #dados_cnh{
+            position:absolute;
+            left:100px;
+            top:980px;
+            font-size:26px;
+            font-family:Bahnschrift SemiBold;
+        }
+        #dados_cnh form label{
+            font-family:Bahnschrift SemiBold;
+           font-size:18px;
+        }
+        #linha_abaixo_texto_dados_pessoais{
+            position:absolute;
+            top:950px;
+            border:none;
+            border-bottom:solid gray;
+            left:100px;
+            width:1285px;
+
+        }
+        #linha_abaixo_do_texto_cnh{
+            position:absolute;
+            top:70px;
+            border:none;
+            border-bottom:solid gray;
+            
+            width:1285px;
+        }
+        #numero_cnh{
+            position:absolute;
+           top:130px;
+           left:0px;
+           width:700px;
+        }
+        #numero_cnh input{
+            width:400px;
+            padding:4px;
+border-radius:7px;
+background-color:rgb(241, 233, 233);
+        }
+        #tipo_cnh{
+            position:absolute;
+           top:130px;
+           left:500px;
+           width:700px;
+        }
+        #tipo_cnh input{
+            width:150px;
+            padding:4px;
+border-radius:7px;
+background-color:rgb(241, 233, 233);
+        }
+        #data_vencimento_cnh{
+            position:absolute;
+           top:130px;
+           left:750px;
+           width:700px;
+        }
+        #data_vencimento_cnh input{
+            width:350px;
+            padding:4px;
+border-radius:7px;
+background-color:rgb(241, 233, 233);
+        }
+        #linha_abaixo_cnh{
+            position:absolute;
+            top:200px;
+            border:none;
+            border-bottom:solid gray;
+            
+            width:1285px;
+        }
+        #linha_abaixo_do_texto_login{
+            position:absolute;
+            top:70px;
+            border:none;
+            border-bottom:solid gray;
+           
+
+            width:1285px;
+        }
+        
+        #dados_login {
+            position:absolute;
+            left:100px;
+            top:1210px;
+            font-size:26px;
+            font-family:Bahnschrift SemiBold;
+        }
+        #dados_login label{
+            font-family:Bahnschrift SemiBold;
+           font-size:18px;
+        }
+        #login{
+        position:absolute;
+        top:120px;
+        }
+        #login input{
+            width:400px;
+            padding:4px;
+border-radius:7px;
+background-color:rgb(241, 233, 233);
+        }
+        #senha{
+            
+            position:absolute;
+            left:870px;
+            top:120px;
+        }
+        #senha input{
+            width:400px;
+            padding:4px;
+border-radius:7px;
+background-color:rgb(241, 233, 233);
+        }
+        #abaixo_login{
+            position:absolute;
+            top:200px;
+            border:none;
+            border-bottom:solid gray;
+           
+
+            width:1285px;
+        }
+        input[type=submit]{
+        position:absolute;
+        top:1470px;
+        left:670px;
+        padding:4px;
+        font-family:Bahnschrift SemiBold;
+        color:white;
+        background-color:rgb(226, 71, 71);
+        border-radius:6px;
+        width:130px;
+        height:40px;
+        font-size:18px;
+        }
+        #linha_abaixo_enviar{
+            position:absolute;
+            top:1530px;
+            border:none;
+            border-bottom:solid gray;
+            left:90px;
+            width:1285px;
+        }
+        #esse{
+            position:absolute;
+            top:1600px;
+            left:500px;
+        }
+        #borda_preta_01{
+            position:absolute;
+            left:-10px;
+            width:65px;
+background-color:black;
+top:-5px;
+height:1670px;
+        }
+        #borda_preta_02{
+            left:1505px;
+            position:absolute;
+            width:100px;
+background-color:black;
+top:-5px;
+height:1670px;
+        }
+        input[type=button]{
+            width:85px;
+            color:white;
+            background-color:red;
+            border-radius:6px;
+            height:45px;
+            font-family:Bahnschrift SemiBold;
+            font-size:16px;
+        }
+      </style>
+</head>
+<body>
+    <section>
+        <div id="barra_de_tarefa">
+            <img src="logo_principal.png"/>
+            <div id="barra">
+        <a href="#">Home</a>
+        <a href="#">Alugar</a>
+        <a href="#">Cadastro</a>
+        <a href="#">Sobre</a>
+        <a href="#"><input type="button" value="Login"/></a>
+    </div>
+        </div>
+    </section>
+    <section>
+        <div id="imagem">
+         <img src="cadastro.png"/>
+        </div>
+    </section>
+    <section>
+        <form method="" action="">
+        <div id="formulario_dados_pessoais">
+            <h4>Dados Pessoais</h4>
+            <input id="linha_abaixo_do_texto" type="text"/>
+        <form method="" action="">
+            <div id="nome">
+            <label>Nome: </label>
+            <input type="text" name="nome"/>
+        </div>
+        <div id="data_de_nascimento"> 
+            <label>Data de Nascimento: </label>
+            <input type="date" name="data_de_nascimento"/>
+        </div>
+        <div id="rg">
+            <label>RG: </label>
+            <input type="text" name="rg"/>
+        </div>
+        <div id="cpf">
+            <label>CPF: </label>
+            <input type="text" name="cpf"/>
+        </div>
+        <div id="logradouro">
+            <label>Logradouro: </label>
+            <input type="text" name="logradouro"/>
+        </div>
+        <div id="numero">
+            <label>Numero</label>
+            <input type="number" name="numero"/>
+        </div>
+        <div id="complemento">
+            <label>Complemento</label>
+            <input type="text" name="complemento"/>
+            </div>
+            <div id="cidade">
+                <label>Cidade</label>
+                <input type="text" name="cidade"/>
+            </div>
+            <div id="estado">
+                <label>Estado: </label>
+                <input type="text" name="estado"/>
+            </div>
+            <div id="cep">
+                <label>CEP</label>
+                <input type="number" name="cep"/>
+            </div>
+        </form>
+        </div>
+        <input id="linha_abaixo_texto_dados_pessoais" type="text"/>
+    </section>
+    <section>
+        <div id="dados_cnh">
+
+      
+        <h4>Dados CNH</h4>
+            <input id="linha_abaixo_do_texto_cnh" type="text"/>
+
+            <form method="" action="">
+         <div id="numero_cnh">
+             <label>Numero: </label>
+            <input type="text" name="numero_cnh"/>
+        </div>
+        <div id="tipo_cnh">
+            <label>Tipo: </label>
+            <input type="text" name="tipo_cnh"/>
+        </div>
+        <div id="data_vencimento_cnh">
+            <label>Data de Vencimento: </label>
+            <input type="date" name="vencimento_cnh"/>
+        </div>
+        <input type="text" id="linha_abaixo_cnh"/>
+            </form>
+        </div>
+        </section>
+        <section>
+            <div id="dados_login">
+
+                <h4>Login</h4>
+                <input id="linha_abaixo_do_texto_login" type="text"/>
+            <form method="" action="">
+                <div id="login">
+                <label>Login</label>
+                <input type="text" name="login"/>
+            </div>
+            <div id="senha">
+                <label>Senha</label>
+               
+                <input type="password" name="senha"/>
+            </div>
+            </form>
+            <input type="text" id="abaixo_login"/>
+            </div>
+
+        </section>
+        <input type="submit" value="Cadastrar"/>
+    </form>
+    
+    <input type="text" id="linha_abaixo_enviar"/>
+<div id="esse">
+    <h4 >COPYRIGHT 2021 EASYCARS CO,LTD - DESIGN: EASYCARS.CO</h4>
+</div>
+<div id="borda_preta_01">
+.
+</div>
+<div id="borda_preta_02">
+.
+</div>
+</body>
+</html>
