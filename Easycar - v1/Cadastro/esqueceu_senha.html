@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<style>
+    .container{
+        
+        display:table;
+
+        height:100vh;
+        
+    
+      
+    }
+
+    body{ 
+         background-image:url(bg.png);
+        
+    }
+    form input[type=submit]{
+        position:relative;
+        transform:translate(200px,-30px);
+        display:block;
+        padding:4px;
+        border-radius:6px;
+        width:120px;
+        height:40px;
+        background-color:#fa3706;
+        color:white;
+        
+    }
+    button{
+        position:relative;
+        transform:translate(200px,-5px);
+        background-color:#5c5b5b;
+        border-radius:6px;
+        width:120px;
+        height:40px;
+    }
+    #forms{
+        background:rgba(0,0,0,0.5);
+    }
+    #logo{
+        background:rgba(0,0,0,0.5) ;
+      
+    }
+    #logo img{
+        position:relative;
+        transform:translate(150px,30px);
+        
+    }
+    #texto{
+        background:rgba(0,0,0,0.5) ;
+        color:white;
+        
+    }
+    #texto h2{
+        transform:translate(130px,30px);
+        color:white;
+    }
+    #texto h6{
+        transform:translate(105px,30px);
+        color:white;
+    }
+    .row{
+        width:600px;
+       height:400px;
+        position:relative;
+        transform:translate(400px,200px);
+    }
+    input[type="text"]{
+        border:none;
+border-bottom:solid#FFF;
+outline:none;
+display:block;
+width:400px;
+margin:36px;
+position:relative;
+transform:translate(35px,-10px);
+background:transparent;
+color:#FFF;
+font-size:15px;
+padding:4px;
+color:beige;
+    }
+    p{
+        position:relative;
+transform:translate(65px,20px);
+color:white;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+    <div class="row">
+        <div id="logo">
+<img src="logo.png"/>
+        </div>
+        <div id="texto">
+            <h2>Esqueceu a senha ? </h2>
+            <h6>Receba sua senha temporária em seu e-mail.</h6>
+        </div>
+        <div id="forms" class="col-md-12">
+       <form action="" method="">
+          <p>
+              E-mail
+          </p>
+       <input type="text" placeholder="Digite seu e-mail"/>
+      <input type="submit" value="ENVIAR"/>
+      <button>VOLTAR</button>
+       </form>
+    </div>
+   
+    </div>
+    </div>
+</body>
+</html>
